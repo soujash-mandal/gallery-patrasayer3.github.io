@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Gallery</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw==" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+		} else {
+		mybutton.style.display = "none";
+		}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+		}
+		</script>
+		<header>
+			<!--**********************************************************************************navbar*******************************************************************************************************-->
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+				<a class="navbar-brand pl-3" href="#">Patrasayer Gallery</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="main.html"><i class="fa fa-fw fa-home"></i> Home </a>
+						</li>
+						
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><i class="fa fa-photo"></i> Gallery <span class="sr-only">(current)</span></a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" href="#c4"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="about.html"><i class="fa fa-fw fa-user"></i> About Us</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</nav>
+			<!--**********************************************************************************navbar*******************************************************************************************************-->
+		</header>
+		<!--*******************************************************************************nav2********************************************************************************************-->
+		
+		
+		<!--*******************************************************************************nav2********************************************************************************************-->
+
+
+		<!--*******************************************************************************pagination********************************************************************************************-->
+		<div class="container-fluid pt-3">
+			<div class="row">
+				<div class="col-lg-1 col-md-2 col-2">
+					<div class="">
+						<a href="main.html" ><i class="material-icons" class="text-dark">&#xe5c4;</i></a>
+					</div>
+				</div>
+
+
+				<div class="col-lg-11 col-md-10 col-10">
+					<div class="">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-end">
+
+								<li class="page-item">
+									<a class="page-link" href="gallery2.html" tabindex="-1"><<</a>
+								</li>
+
+								<li class="page-item"><a class="page-link" href="gallery.html">1</a></li>
+								<li class="page-item"><a class="page-link" href="gallery2.html">2</a></li>
+								<li class="page-item active"><a class="page-link" href="#">3</a></li>
+
+								<li class="page-item disabled">
+									<a class="page-link" href="#">>></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--*******************************************************************************pagination********************************************************************************************-->
+		<!--**********************************************************************************gallery*******************************************************************************************************-->
+		<div class="container-fluid">
+			<!--
+			<h1 class="text-left text-capitalize  pb-2">Gallery</h1>
+		-->
+			
+			<div class="row no-gutters gallerys">
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pn1.jpeg" target="_blank">
+						<img src="pn1.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pu1.jpeg" target="_blank">
+						<img src="pu1.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pn2.jpeg" target="_blank">
+						<img src="pn2.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pt3.jpg" target="_blank">
+						<img src="pt3.jpg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pn3.jpeg" target="_blank">
+						<img src="pn3.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pt2.jpeg" target="_blank">
+						<img src="pt2.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pn4.jpg" target="_blank">
+						<img src="pn4.jpg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pu2.jpeg" target="_blank">
+						<img src="pu2.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pt1.jpeg" target="_blank">
+						<img src="pt1.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pu3.jpeg" target="_blank">
+						<img src="pu3.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pn5.jpeg" target="_blank">
+						<img src="pn5.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				<div class="col-lg-2 col-md-3 col-4">
+					<a href="pn7.jpeg" target="_blank">
+						<img src="pn7.jpeg" class="img-fluid p-1 rounded">
+					</a>
+				</div>
+
+				
+				
+			</div>
+		</div>
+		<!--**********************************************************************************gallery*******************************************************************************************************-->
+		<!--*******************************************************************************pagination********************************************************************************************-->
+
+
+
+		<div class="container-fluid pt-3">
+			<div class="row">
+				<div class="col-lg-1 col-md-2 col-2">
+					<div class="">
+						<!--
+						<a href="main.html" ><i class="material-icons" class="text-dark">&#xe5c4;</i></a>
+					-->
+					</div>
+				</div>
+
+
+				<div class="col-lg-11 col-md-10 col-10">
+					<div class="">
+						<nav aria-label="Page navigation example">
+							<ul class="pagination justify-content-end">
+
+								<li class="page-item">
+									<a class="page-link" href="gallery2.html" tabindex="-1"><<</a>
+								</li>
+
+								<li class="page-item"><a class="page-link" href="gallery.html">1</a></li>
+								<li class="page-item"><a class="page-link" href="gallery2.html">2</a></li>
+								<li class="page-item active"><a class="page-link" href="#">3</a></li>
+
+								<li class="page-item disabled">
+									<a class="page-link" href="#">>></a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+
+
+
+		<!--*******************************************************************************pagination********************************************************************************************-->
+		<!--*********************************************************************************footer.starts***********************************************************************************-->
+		<section id="c4">
+			<div class="container-fluid bg-dark text-white align-items-center text-center p-5 mt-5">
+				<h4>connect with us</h4>
+				<div class="pt-3">
+					<p class="pb-5">
+						<a href="https://www.facebook.com/soujash.mandal.7/" class="m-2 "><i class='fab fa-facebook-f' style='font-size:24px;color: white;'></i></a>
+						<a href="https://www.instagram.com/soujash_mandal/" class="m-2 "><i class='fab fa-instagram' style='font-size:24px;color: white;'></i></a>
+						<a href="https://www.youtube.com/channel/UCJ8vothd4ZfA33bwXr5Wu4w" class="m-2 "><i class='fab fa-youtube' style='font-size:24px;color: white;'></i></a>
+						<a href="https://twitter.com/SoujashM" class="m-2 "><i class='fab fa-twitter' style='font-size:24px;color: white;'></i></a>
+						<a href="https://www.quora.com/profile/Soujash-Mandal" class="m-2 "><i class='fab fa-quora' style='font-size:24px;color: white;'></i></a>
+						<a href="" class="m-2 "><i class='fab fa-pinterest' style='font-size:24px;color: white;'></i></a>
+					</p>
+				</div>
+				<h5>We have made this project using bootstrap4 , HTML , CSS & JS</h5>
+				<h3>powered by</h3><h3> <a href="#">S-tech.com</a></h3>
+			</div>
+		</section>
+		<!--*********************************************************************************footer.ends*************************************************************************************-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js" integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw==" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$('.gallerys').magnificPopup({
+					type:'image',
+					delegate:'a',
+					gallery: {
+						enabled : true
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
